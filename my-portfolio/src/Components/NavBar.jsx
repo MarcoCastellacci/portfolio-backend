@@ -10,14 +10,22 @@ import {
     MDBNavbarBrand,
     MDBCollapse
 } from 'mdb-react-ui-kit';
+import Logo from '../Assets/marco.png'
+import '../Styles/styles.css'
 
 export default function NavBar() {
-const [showNavColorSecond, setShowNavColorSecond] = useState(false);
+    const [showNavColorSecond, setShowNavColorSecond] = useState(false);
     return (
         <>
             <MDBNavbar expand='lg' dark bgColor='dark'>
                 <MDBContainer fluid>
-                    <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
+                    <img
+                        src={Logo}
+                        height='80'
+                        alt=''
+                        loading='lazy'
+                    />
+                    <MDBNavbarBrand className='nombre-navbar'>Marco Castellacci</MDBNavbarBrand>
                     <MDBNavbarToggler
                         type='button'
                         data-target='#navbarColor02'
@@ -32,17 +40,8 @@ const [showNavColorSecond, setShowNavColorSecond] = useState(false);
                         <MDBNavbarNav className='.justify-content-center mb-2 mb-lg-0'>
                             <MDBNavbarItem className='active'>
                                 <MDBNavbarLink aria-current='page' href='#'>
-                                    Home
+                                    My pages
                                 </MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink href='#'>Features</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink href='#'>About</MDBNavbarLink>
                             </MDBNavbarItem>
                         </MDBNavbarNav>
                     </MDBCollapse>

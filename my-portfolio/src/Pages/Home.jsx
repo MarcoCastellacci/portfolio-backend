@@ -1,12 +1,12 @@
 import React from 'react';
-import NavBar from '../Components/NavBar';
-
+import '../Styles/styles.css'
 
 export default function Home() {
 
     return (
         <>
-        <NavBar/>
+            <div className="home-container">
+            </div>
         </>
     )
 }
