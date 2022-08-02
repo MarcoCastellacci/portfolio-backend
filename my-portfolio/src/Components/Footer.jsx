@@ -16,6 +16,7 @@ export default function App() {
                         className='m-1'
                         style={{ backgroundColor: '#3b5998' }}
                         href='https://www.facebook.com/emmanuel.tano.14/'
+                        target='_blank'
                         role='button'
                     >
                         <MDBIcon fab icon='facebook-f' />
@@ -26,25 +27,17 @@ export default function App() {
                         className='m-1'
                         style={{ backgroundColor: '#55acee' }}
                         href='https://twitter.com/Castellacci_M'
+                        target='_blank'
                         role='button'
                     >
                         <MDBIcon fab icon='twitter' />
-                    </MDBBtn>
-
-                    <MDBBtn
-                        floating
-                        className='m-1'
-                        style={{ backgroundColor: '#dd4b39' }}
-                        href='mailto:marco.castellacci87@gmail.com'
-                        role='button'
-                    >
-                        <MDBIcon fab icon='google' />
                     </MDBBtn>
                     <MDBBtn
                         floating
                         className='m-1'
                         style={{ backgroundColor: '#ac2bac' }}
                         href='https://www.instagram.com/mac_kako87/'
+                        target='_blank'
                         role='button'
                     >
                         <MDBIcon fab icon='instagram' />
@@ -55,6 +48,7 @@ export default function App() {
                         className='m-1'
                         style={{ backgroundColor: '#0082ca' }}
                         href='https://www.linkedin.com/in/marco-castellacci/'
+                        target='_blank'
                         role='button'
                     >
                         <MDBIcon fab icon='linkedin-in' />
@@ -65,6 +59,7 @@ export default function App() {
                         className='m-1'
                         style={{ backgroundColor: '#333333' }}
                         href='https://github.com/MarcoCastellacci'
+                        target='_blank'
                         role='button'
                     >
                         <MDBIcon fab icon='github' />

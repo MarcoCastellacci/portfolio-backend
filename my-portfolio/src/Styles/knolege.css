@@ -1,0 +1,32 @@
+body,
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    height: 250px;
+    margin: 0 auto;
+    perspective: 2000px;
+    perspective-origin: center center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+}
+
+.point {
+    background: #E87A24;
+    border-radius: 50%;
+    height: 4px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 4px;
+}
