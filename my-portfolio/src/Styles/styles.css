@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+ /* Home */
 .home-container {
     display: flex;
     flex-direction: column;
@@ -15,6 +15,26 @@ body {
     background-blend-mode: multiply, multiply;
 }
 
+/* Navbar */
 .nombre-navbar {
     margin: 0 1rem;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+}
+
+.skills-card {
+    margin: 1rem 1.5rem !important;
+    background-color: rgba(40,50,80, .3) !important;
+    min-width: 20%;
 }
