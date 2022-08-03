@@ -3,8 +3,22 @@ body {
     margin: 0;
     padding: 0;
 }
- /* Home */
+
+/* Home */
 .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../Assets/fondo.gif');
+    background-blend-mode: multiply, multiply;
+}
+
+/* Detail */
+
+.details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,10 +28,22 @@ body {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
     background-blend-mode: multiply, multiply;
 }
-
 /* Navbar */
 .nombre-navbar {
     margin: 0 1rem;
+    font-size: 2rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    margin: 0 .5rem;
+}
+
+.link:hover{
+    color: rgb(80, 124, 113);
 }
 
 /* Skills */
@@ -27,14 +53,77 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
     background-blend-mode: multiply, multiply;
 }
 
 .skills-card {
-    margin: 1rem 1.5rem !important;
-    background-color: rgba(40,50,80, .3) !important;
-    min-width: 20%;
+    margin: 2rem 1rem;
 }
+/* From uiverse.io by @alexruix */
+.card {
+    height: 254px;
+    width: 25%;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 1em;
+    box-shadow: 0 0 20px 8px #29387a;
+    z-index: 1;
+    
+}
+
+/*Image*/
+.card-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #0a3394;
+    background: linear-gradient(to top, #021e5f, #234885);
+    border-radius: 10px;
+}
+.card-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*Description */
+.card-description {
+    display: flex;
+    position: absolute;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #7e92d4;
+    height: 70%;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-body {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 0;
+}
+
+
+/* Hover states */
+
+.card:hover .card-description {
+    transform: translateY(100%);
+}
+
+
+/* Animations */

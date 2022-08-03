@@ -1,4 +1,3 @@
-import Card from 'react-bootstrap/Card';
 import '../Styles/styles.css'
 
 function Skills() {
@@ -26,25 +25,25 @@ function Skills() {
             image: 'https://img.europapress.es/fotoweb/fotonoticia_20140316100133_800.jpg',
             description: 'La resiliencia es la capacidad de una persona para superar las adversidades y seguir adelante.',
             info: 'La resiliencia es una caracteristica que logre con el correr de los años y del superar luchas que parecian perdidas antes de empezar.'
+        },
+        {
+            name: 'Resolucion de problemas',
+            image: 'https://comunidad.fan/web/uploads/news/934/0-desktop.jpg?1580471450',
+            description: 'La resolución de problemas es la fase que supone la conclusión de un proceso más amplio que tiene como pasos previos la identificación del problema y su modelado.',
+            info: 'En mi caso consiste en la investigacion con el fin de encontrar la solucion a un problema,me ha llevado a ser un profesional.'
         }
     ]
     return (
         <>
             <div className="skills-container">
                 {skills.map((skills, index) => (
-                    <Card
-                        key={index}
-                        style={{ width: '18rem' }}
-                        className="mb-2 skills-card"
-                    >
-                        <Card.Header>My Skill</Card.Header>
-                        <Card.Body>
-                            <Card.Title>{skills.name}</Card.Title>
-                            <Card.Text>
-                                {skills.description}
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                    <div key={index} class="card skills-card">
+                        <div class="card-image"><img src={skills.image} alt="" /></div>
+                        <div class="card-description">
+                            <p class="text-title">{skills.name}</p>
+                            <p class="text-body">{skills.info}</p>
+                        </div>
+                    </div>
                 ))}
             </div>
         </>

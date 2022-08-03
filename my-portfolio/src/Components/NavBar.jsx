@@ -5,26 +5,44 @@ import {
     MDBIcon,
     MDBNavbarNav,
     MDBNavbarItem,
-    MDBNavbarLink,
     MDBNavbarToggler,
     MDBNavbarBrand,
     MDBCollapse
 } from 'mdb-react-ui-kit';
+import { Link as LinkRouter } from 'react-router-dom';
 import Logo from '../Assets/marco.png'
 import '../Styles/styles.css'
 
 export default function NavBar() {
     const [showNavColorSecond, setShowNavColorSecond] = useState(false);
+    const pages = [
+        {
+            name: 'Home',
+            to: '/home'
+        },
+        {
+            name: 'My pages',
+            to: '/pages'
+        },
+        {
+            name: 'Details',
+            to: '/detail'
+        }
+
+    ] 
+
     return (
         <>
             <MDBNavbar expand='lg' dark bgColor='dark'>
                 <MDBContainer fluid>
-                    <img
-                        src={Logo}
-                        height='80'
-                        alt=''
-                        loading='lazy'
-                    />
+                    <LinkRouter to="/">
+                        <img
+                            src={Logo}
+                            height='80'
+                            alt=''
+                            loading='lazy'
+                        />
+                    </LinkRouter>
                     <MDBNavbarBrand className='nombre-navbar'>Marco Castellacci</MDBNavbarBrand>
                     <MDBNavbarToggler
                         type='button'
@@ -39,9 +57,10 @@ export default function NavBar() {
                     <MDBCollapse show={showNavColorSecond} navbar id='navbarColor02'>
                         <MDBNavbarNav className='.justify-content-center mb-2 mb-lg-0'>
                             <MDBNavbarItem className='active'>
-                                <MDBNavbarLink aria-current='page' href='#'>
-                                    My pages
-                                </MDBNavbarLink>
+                        {pages.map((page, index) => (
+                                <LinkRouter key={index} className='link' to={page.to}>
+                                    {page.name}
+                                </LinkRouter>))}
                             </MDBNavbarItem>
                         </MDBNavbarNav>
                     </MDBCollapse>
