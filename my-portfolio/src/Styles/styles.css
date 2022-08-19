@@ -12,8 +12,13 @@ body {
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+    background-color: rgba(38, 38, 38, .7)
+    ;
+}
+
+.bg-container {
     background: url('../Assets/fondo.gif');
-    background-blend-mode: multiply, multiply;
+    background-blend-mode: multiply, multiply
 }
 
 /* Detail */
@@ -28,6 +33,7 @@ body {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
     background-blend-mode: multiply, multiply;
 }
+
 /* Navbar */
 .nombre-navbar {
     margin: 0 1rem;
@@ -42,7 +48,7 @@ body {
     margin: 0 .5rem;
 }
 
-.link:hover{
+.link:hover {
     color: rgb(80, 124, 113);
 }
 
@@ -62,6 +68,7 @@ body {
 .skills-card {
     margin: 2rem 1rem;
 }
+
 /* From uiverse.io by @alexruix */
 .card {
     height: 254px;
@@ -71,7 +78,7 @@ body {
     border-radius: 1em;
     box-shadow: 0 0 20px 8px #29387a;
     z-index: 1;
-    
+
 }
 
 /*Image*/
@@ -84,7 +91,8 @@ body {
     background: linear-gradient(to top, #021e5f, #234885);
     border-radius: 10px;
 }
-.card-image img{
+
+.card-image img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
