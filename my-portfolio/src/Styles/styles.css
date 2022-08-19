@@ -132,6 +132,10 @@ body {
 .card:hover .card-description {
     transform: translateY(100%);
 }
+.card-description:hover {
+    transform: translateY(100%);
+    margin-bottom: auto !important;
+}
 
 
 /* Animations */

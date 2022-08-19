@@ -25,8 +25,12 @@ export default function NavBar() {
             to: '/pages'
         },
         {
-            name: 'Details',
+            name: 'Skills',
             to: '/detail'
+        },
+        {
+            name: 'Contact',
+            to: '/contact'
         }
 
     ] 
