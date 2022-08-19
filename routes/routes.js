@@ -32,7 +32,7 @@ Router.route('/proyects')
 // =============================================================
 
 // Tecno Routes
-Router.route('/tecnos')
+Router.route('/tecnologias')
 .get(getTecnos)
 .post(createTecno)
 
