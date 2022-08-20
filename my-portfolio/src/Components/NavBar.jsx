@@ -22,7 +22,7 @@ export default function NavBar() {
         },
         {
             name: 'My pages',
-            to: '/pages'
+            to: '/proyects'
         },
         {
             name: 'Skills',
