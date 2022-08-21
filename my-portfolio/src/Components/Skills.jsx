@@ -37,11 +37,11 @@ function Skills() {
         <>
             <div className="skills-container">
                 {skills.map((skills, index) => (
-                    <div key={index} class="card skills-card">
-                        <div class="card-image"><img src={skills.image} alt="" /></div>
-                        <div class="card-description">
-                            <p class="text-title">{skills.name}</p>
-                            <p class="text-body">{skills.info}</p>
+                    <div key={index} className="card skills-card">
+                        <div className="card-image"><img src={skills.image} alt="" /></div>
+                        <div className="card-description">
+                            <p className="text-title">{skills.name}</p>
+                            <p className="text-body">{skills.info}</p>
                         </div>
                     </div>
                 ))}
