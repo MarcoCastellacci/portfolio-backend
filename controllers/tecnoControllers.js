@@ -32,6 +32,27 @@ const TecnoController = {
             console: console.log('Error en GetTecnos: ', error)
             })
     },
+    createMultipleTecnos: async (req, res) => {
+        const tecnologies = req.body.data
+        let tecnology
+        let error = null
+        try {
+            tecnologies.map(async (tecno) => {
+                await new Tecno({
+                    name: tecno.name,
+                    image: tecno.image,
+                    info: tecno.info
+                }).save()
+            })
+        } catch (err) { error = err }
+        res.json({
+            response: error ? error : tecnology,
+            success: error ? false : true,
+            error: error,
+            console: console.log('Error en CreateMultipleTecnos: ', error)
+            })
+    },
+
     // uploadTecno: (req, res) => {}
 }
 module.exports = TecnoController
