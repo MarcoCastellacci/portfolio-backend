@@ -1,11 +1,11 @@
 /* From uiverse.io by @alexruix */
 .card-profile {
-    width: 100vw;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin: 5rem 0;
 }
 
 .card-profile-img {
@@ -14,25 +14,26 @@
     margin: auto;
     background: #830fff;
     background: linear-gradient(to top, #830fff 0%, #f75cff 100%);
-    border-radius: 80%;
+    border-radius: 20%;
     border: 2px solid rgb(80, 124, 113) !important;
 }
 
 .card-profile-img img {
     width: 100%;
     height: 100%;
-    border-radius: 80%;
+    border-radius: 20%;
+    border: 2px solid rgb(80, 124, 113) !important;
 }
 
 .card-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 50%;
     height: 50vh;
     background: #830fff;
     background: linear-gradient(to top, #830fff 0%, #f75cff 100%);
-    border-radius: 80%;
+    border-radius: 20%;
     margin: auto;
     border: 2px solid rgb(80, 124, 113) !important;
     font-size: 16px;

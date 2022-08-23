@@ -3,34 +3,34 @@ import '../Styles/styles.css'
 function Skills() {
     const skills = [
         {
-            name: 'Paciencia',
+            name: 'Patience',
             image: 'https://cdn.bioguia.com/embed/d9cf62a6777382192386252d3828a28841524401878/4_pasos_para_seguir_cuando_estas_por_perder_la_paciencia_que_te_la_devolveran_de_inmediato?imagick=1&size=500',
             description: 'La paciencia es una virtud que se adquiere con el tiempo, pero que se pierde en un instante.',
-            info: 'Con los años acumulados de experiencia, he aprendido a ser paciente conmigo mismo y con los demás. No siempre es fácil, pero es una virtud que me ha ayudado a crecer como persona y profesional.'
+            info: 'With the accumulated years of experience, I have learned to be patient with myself and with others. It is not always easy, but it is a virtue that has helped me grow as a person and a professional.'
         },
         {
-            name: 'Pasion',
+            name: 'Passion',
             image: 'http://2.bp.blogspot.com/-qI-LAezbStw/VbuHvLmdZ1I/AAAAAAAAA7U/plqoiECfCvA/s1600/redes-sociales.gif',
             description: 'La pasión es generalmente asociado a un sentimiento tan profundo que desborda la frontera del dolor físico o psicológico.',
-            info: 'La pasión es lo que me mueve a seguir aprendiendo y a seguir creciendo como profesional. Me encanta lo que hago y eso me hace sentir muy afortunado.'
+            info: 'Passion is what drives me to keep learning and growing as a professional. I love what I do and that makes me feel very fortunate.'
         },
         {
-            name: 'Trabajo en equipo',
+            name: 'Teamwork',
             image: 'http://www.ricardosalinas.com/blog/images/fotoblogene2709.png',
             description: 'El trabajo en equipo es un proceso que se desarrolla a través de la interacción de un grupo de personas que trabajan juntas para alcanzar un objetivo común.',
-            info: 'El trabajo en equipo es una de mis habilidades más fuertes. Me gusta trabajar con personas que me ayuden a crecer y a mejorar como profesional.'
+            info: 'Teamwork is one of my strongest skills. I like to work with people who help me grow and improve as a professional.'
         },
         {
-            name: 'Resiliencia',
+            name: 'Resilience',
             image: 'https://img.europapress.es/fotoweb/fotonoticia_20140316100133_800.jpg',
             description: 'La resiliencia es la capacidad de una persona para superar las adversidades y seguir adelante.',
-            info: 'La resiliencia es una caracteristica que logre con el correr de los años y del superar luchas que parecian perdidas antes de empezar.'
+            info: 'Resilience is a characteristic that I have achieved over the years and overcoming struggles that seemed lost before they began.'
         },
         {
-            name: 'Resolucion de problemas',
+            name: 'Problem solving',
             image: 'https://comunidad.fan/web/uploads/news/934/0-desktop.jpg?1580471450',
             description: 'La resolución de problemas es la fase que supone la conclusión de un proceso más amplio que tiene como pasos previos la identificación del problema y su modelado.',
-            info: 'En mi caso consiste en la investigacion con el fin de encontrar la solucion a un problema,me ha llevado a ser un profesional.'
+            info: 'In my case it consists of research in order to find the solution to a problem, it has led me to become a professional.'
         }
     ]
     return (

@@ -26,7 +26,7 @@ export default function NavBar() {
         },
         {
             name: 'Skills',
-            to: '/detail'
+            to: '/knoleges'
         },
         {
             name: 'Contact',
