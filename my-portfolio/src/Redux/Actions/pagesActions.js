@@ -1,13 +1,13 @@
 import axios from 'axios';
 import URL from '../../Url';
 
-const TecnoActions = {
-    getTecno: () => {
+const ProyectActions = {
+    getProyects: () => {
         return async (dispatch, getState) => {
             try {
-                const res = await axios.get(`${URL}tecnologias`)
-                // console.log(res)
-                dispatch({type: 'GET_TECNOS', payload: res.data.response})
+                const res = await axios.get(`${URL}proyects`)
+                console.log(res)
+                dispatch({type: 'GET_PROYECTS', payload: res.data.response})
                 }
             catch (err) {
                 console.log(err)
@@ -17,4 +17,4 @@ const TecnoActions = {
     // createTecno: (tecno) => {
 }
 
-export default TecnoActions;
+export default ProyectActions;
